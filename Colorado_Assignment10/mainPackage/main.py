@@ -2,7 +2,7 @@
 
 from weatherPackageFetch.fetcher import *
 from weatherPackageParser.parser import *
-
+from weatherPackagePrint.print import *
 
 def main():
     print("Weather project")
@@ -20,10 +20,12 @@ def main():
         parser = WeatherParser()
         parsed_data = parser.parse(city, raw_data)
 
-        print(parsed_data)
+        # print(parsed_data)
 
     print("===================================================================================")
 
+    printer = WeatherPrinter()
+    printer.display(parsed_data)
 
 
 
