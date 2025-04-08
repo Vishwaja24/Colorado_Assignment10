@@ -31,10 +31,10 @@
     <Compile Include="UBPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="VPPackage\module2.py">
+    <Compile Include="weatherPackageFetch\fetcher.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="VPPackage\__init__.py">
+    <Compile Include="weatherPackageFetch\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ZHPackage\module3.py">
@@ -53,7 +53,7 @@
   <ItemGroup>
     <Folder Include="mainPackage\" />
     <Folder Include="UBPackage\" />
-    <Folder Include="VPPackage\" />
+    <Folder Include="weatherPackageFetch\" />
     <Folder Include="ZHPackage\" />
     <Folder Include="ZIPackage\" />
   </ItemGroup>
