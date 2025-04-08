@@ -33,6 +33,8 @@ def main():
     writer = WriteCSV()
     writer.write(parsed_data)
 
+    print("Zulqarnayan")
+
 
 if __name__ == "__main__":
     main()
