@@ -37,10 +37,10 @@
     <Compile Include="weatherPackageFetch\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ZHPackage\module3.py">
+    <Compile Include="weatherPackageCSV\writeCSV.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ZHPackage\__init__.py">
+    <Compile Include="weatherPackageCSV\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="weatherPackageParser\parser.py">
@@ -54,7 +54,7 @@
     <Folder Include="mainPackage\" />
     <Folder Include="weatherPackagePrint\" />
     <Folder Include="weatherPackageFetch\" />
-    <Folder Include="ZHPackage\" />
+    <Folder Include="weatherPackageCSV\" />
     <Folder Include="weatherPackageParser\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
