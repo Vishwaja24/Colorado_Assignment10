@@ -1,6 +1,8 @@
 #main.py
 
 from weatherPackageFetch.fetcher import *
+from weatherPackageParser.parser import *
+
 
 def main():
     print("Weather project")
@@ -11,6 +13,17 @@ def main():
     raw_data = fetcher.get_weather_data()
 
     print(raw_data)
+
+    print("===================================================================================") 
+
+    if raw_data:   
+        parser = WeatherParser()
+        parsed_data = parser.parse(city, raw_data)
+
+        print(parsed_data)
+
+    print("===================================================================================")
+
 
 
 
