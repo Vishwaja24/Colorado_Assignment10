@@ -11,9 +11,13 @@
 # Anything else that's relevant: N/A
 
 import csv
+from datetime import datetime
 
 class WriteCSV:
-    def write(self, data, filename='denverWeather_data.csv'):
+    def write(self, data):
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"weather_data_{timestamp}.csv"
+
         with open(filename, mode='w', newline='') as file:
             writer = csv.DictWriter(file, fieldnames=data.keys())
             writer.writeheader()
